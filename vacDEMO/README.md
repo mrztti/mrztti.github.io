@@ -12,8 +12,8 @@
 <body style="background: rgb(37,37,37);">
     <header style="background: rgb(29,30,30);padding: 10px;"><strong style="color: rgb(125,98,29);font-size: 20px;">VAC-CHA</strong></header><video id='qr_display' class='w-100'></video>
 <script type="module">
-    import QrScanner from "../qr-scanner.min.js";
-    QrScanner.WORKER_PATH = '../qr-scanner-worker.min.js';
+    import QrScanner from "assets/js/qr-scanner.min.js";
+    QrScanner.WORKER_PATH = 'assets/js/qr-scanner-worker.min.js';
     
     const video = document.getElementById('qr_display');
     const scanner = new QrScanner(video, result => console.log(result), error => console.log(error));
